@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background-color: peru;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main {
+  max-width: 690px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+}
+
+.distance h1,
+.weight h2,
+.bmi h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.distance input,
+.weight input,
+.bmi input,
+.distance select,
+.weight select,
+.bmi select,
+.distance button,
+.weight button,
+.bmi button {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.distance p,
+.weight p,
+.bmi p {
+  margin-bottom: 10px;
+}
+
+.distance select,
+.weight select,
+.bmi select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+
+.distance .select-box,
+.weight .select-box {
+  display: flex;
+  align-items: center;
+}
+
+.distance .select-box img,
+.weight .select-box img {
+  width: 48px;
+  height: 36px;
+  margin-right: 5px;
+}
+
+.distance .drop-list,
+.weight .drop-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.distance .drop-list .select-box,
+.weight .drop-list .select-box {
+  margin-bottom: 10px;
+}
+
+.bmi #calculateButton,
+.distance button,
+.weight button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+}
+
+.container {
+  max-width: 690px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+}
+
+.container header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container form .amount p,
+.container form .From-currency p,
+.container form .to-currency p {
+  margin-bottom: 10px;
+}
+
+.container form .amount input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.container form .drop-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container form .drop-list .select-box {
+  display: flex;
+  align-items: center;
+}
+
+.container form .drop-list .select-box img {
+  width: 48px;
+  height: 36px;
+  margin-right: 5px;
+}
+
+.container form .drop-list select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+
+.container form .exchange-rate {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container form button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    text-align: center;
+  }
+
+  .main .distance,
+  .main .weight,
+  .main .bmi {
+    margin-bottom: 20px;
+  }
+
+  .main .distance .drop-list,
+  .main .weight .drop-list {
+    flex-direction: column;
+  }
+
+  .main .distance .drop-list .select-box,
+  .main .weight .drop-list .select-box {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Metric</title>
+</head>
+<body>
+    
+    <div class="main">
+        <header>PJ BMI Calculator And Unit Converter</header>
+<div class="distance">
+<h1>Distance Converter</h1>
+<input type="number" placeholder="Enter values" id="input" autocomplete="off" >
+<p>Convert From</p>
+<select id="select1">
+<option>Kilometer</option>
+<option>Centimeter</option>
+<option>Miles</option>
+<option>Foot</option>
+<option>Inches</option>
+
+</select>
+<i class="fas fa-exchange-alt"></i>
+<p>Convert To</p>
+<select id="select2">
+    <option>Miles</option>
+    <option>Centimeter</option>
+<option>Kilometer</option>
+<option>Foot</option>
+<option>Inches</option>
+
+</select>
+
+
+<button>Convert Unit</button>
+<p id="result"></p>
+
+</div>
+<h2>Convert Weight</h2>
+<div class="weight">
+    <input type="number" placeholder="Enter values" id="inputt" autocomplete="off" >
+    <p>Convert From</p>
+    <select id="selectA">
+      <option>Kilograms</option>
+      <option>Grams</option>
+      <option>Pounds</option>
+      <option>Ounce</option>
+      <option>Newtons</option>
+    </select>
+    <i class="fa-solid fa-arrow-right-arrow-left" id="exch"></i>
+    <p>Convert To</p>
+    <select id="selectB">
+      <option>Pounds</option>
+      <option>Kilograms</option>
+      <option>Grams</option>
+      <option>Ounce</option>
+      <option>Newtons</option>
+    </select>
+    <button id="btn">Convert Unit</button>
+    <p id="unit"></p>
+  </div>
+  
+  <div class="bmi">
+<h1>Calculate BMI and know if you are obesse</h1>
+<input type="number" id="weightInput" placeholder="Enter Weight in Kilogram" >
+<input type="text" id="heightInput" placeholder="Enter Height in CM" >
+<button id="calculateButton">Get BMI</button>
+
+
+<p id="bmi"></p>
+
+  </div>
+
+
+
+
+<script src="script.js"></script>
+<p>&copy;James Mukumu</p>
+
+</body>
+</html>
